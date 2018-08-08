@@ -8,12 +8,17 @@ import Icons from '@/pages/Icons.vue'
 import Maps from '@/pages/Maps.vue'
 import Notifications from '@/pages/Notifications.vue'
 import UpgradeToPRO from '@/pages/UpgradeToPRO.vue'
+import Login from '@/pages/Login.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+  {
+    path: '/app',
     component: DashboardLayout,
-    redirect: '/dashboard',
     children: [
       {
         path: 'dashboard',
